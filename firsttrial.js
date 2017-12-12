@@ -3,6 +3,8 @@ var url = require('url');
 var querystring = require('querystring');
 var EventEmitter = require('events').EventEmitter;
 
+var firstmodule = require('firstmodule');
+
 var game = new EventEmitter();
 
 game.on('name', function(message){
@@ -28,6 +30,7 @@ var server = http.createServer(function (req, res) {
 			
 			res.write(params['firstname']);
 			game.emit('name', params['firstname']); //bir fonk a veri emit ediyoruz. istediğimiz zaman.
+			firstmodule.sayHello();
 		}
 		else{
 			
