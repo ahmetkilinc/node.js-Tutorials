@@ -3,7 +3,9 @@ Node.js basic trials on Windows
 
 Download node.js trough this link: https://nodejs.org/en/
 
-Create a node script under C:\users\Your_Computer_name\Your_Script_Name.js
+Create a node script under C:\users\Your_Computer_name\
+
+name your script: Your_Script_Name.js
 
 Open cmd, and start your server like: node Your_Script_Name.js
 
