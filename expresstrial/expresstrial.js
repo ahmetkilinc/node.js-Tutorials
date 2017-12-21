@@ -19,12 +19,6 @@ app.get('/ahmet', function(req, res) {
 	res.write('ihi ihi');
     res.end();
 });
-/*
-app.get('/hop/:num/human', function(req, res) {
-    res.setHeader('Content-Type', 'text/plain');
-	res.write('you are the human number: ' + req.params.num);
-    res.end();
-});*/
 
 app.get('/hop/:num/human', function(req, res){
 	
