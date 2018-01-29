@@ -1,0 +1,16 @@
+{
+  "name": "expressapp",
+  "version": "0.1.0",
+  "dependencies": {
+    "express": "^4.16.2",
+    "markdown": "^0.5.0"
+  },
+  "description": "simple app",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "hoi"
+  },
+  "author": "ahmet",
+  "license": "ISC"
+}
