@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Yapılacaklar Listesi</title>
+        <style>
+            a {
+				text-decoration: none; 
+				color: black;
+			}
+        </style>
+    </head>
+
+    <body>
+        <h1>Yapılacaklar Listesi</h1>
+
+        <ul>
+        <% todolist.forEach(function(yapilacaklar, index) { %>
+            <li><a href="/yapilacaklar/sil/<%= index %>">✘</a> <%= yapilacaklar %></li>
+        <% }); %>
+        </ul>
+
+        <form action="/yapilacaklar/ekle/" method="post">
+            <p>
+                <label for="newtodo">Yapılacak ne vardı?</label>
+                <input type="text" name="newtodo" id="newtodo" autofocus />
+                <input type="submit" />
+            </p>
+        </form>
+    </body>
+</html>
